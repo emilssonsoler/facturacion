@@ -5,10 +5,13 @@
  */
 package facturacion.fx;
 
+
+
+
+import facturacionlb.Producto;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
-
 /**
  * FXML Controller class
  *
@@ -21,7 +24,10 @@ public class FormProductoController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        Producto p = new Producto();
+        p.setNm("hah");
+        System.out.println(p.getNm());
+        
     }    
     
 }
