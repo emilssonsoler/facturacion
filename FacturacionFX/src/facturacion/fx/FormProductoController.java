@@ -66,7 +66,7 @@ public class FormProductoController implements Initializable {
     
     public void  nuevoProducto() throws IOException{
         Producto producto=new Producto();
-        abrirventanamodal(producto, "nuevo porducto");
+        abrirventanamodal(producto, "Nuevo Producto");
     }
 
     private void abrirventanamodal(Producto producto,String titulo) throws IOException {

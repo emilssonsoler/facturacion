@@ -25,8 +25,14 @@ public class ProductoServicio {
     
     
     public void guardar(Producto producto){
+        boolean idrepetida=false;
+        for(Producto busqueda:listaDeProducto){
+            if (busqueda.getId()==producto.getId()) {
+                idrepetida=true;
+            }
+        }
         
-     if(producto.getId().equals(0)){
+     if(!idrepetida){
      listaDeProducto.add(producto);
      }
     }
